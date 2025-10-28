@@ -1,0 +1,53 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f9f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #cce5dd;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+nav a {
+  margin: 0 1em;
+  color: #2c6e49;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 2em;
+  background-color: #e0f2e9;
+  text-align: center;
+}
+
+main {
+  padding: 2em;
+}
+
+footer {
+  background: #cce5dd;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.blog-list li {
+  margin-bottom: 2em;
+}
