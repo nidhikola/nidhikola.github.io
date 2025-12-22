@@ -3,58 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | NonToxicLife</title>
 
-  <title>Non-Toxic Living | Clean, Simple, Healthy Living Tips</title>
-  <meta name="description" content="Discover non-toxic living tips, natural cleaning recipes, and low-tox lifestyle habits for a healthier home and family." />
-  <meta name="keywords" content="non-toxic living, clean lifestyle, natural home, green cleaning, clean beauty, low-tox habits" />
-  <meta name="author" content="Your Name Here" />
-  <meta name="robots" content="index, follow" />
+  <!-- SEO -->
+  <meta name="description" content="Read articles about non-toxic living, clean beauty, healthy food, and safer home choices." />
 
-  <!-- Social Sharing -->
-  <meta property="og:title" content="Non-Toxic Living | Clean, Simple, Healthy Living Tips" />
-  <meta property="og:description" content="Explore simple non-toxic swaps and natural habits for a healthier lifestyle. Green cleaning, clean beauty, and more." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://nontoxicliving.com" />
-  <meta property="og:image" content="https://nontoxicliving.com/images/preview.jpg" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Non-Toxic Living | Clean, Simple, Healthy Living Tips" />
-  <meta name="twitter:description" content="Simple non-toxic lifestyle tips for a healthier, happier home." />
-  <meta name="twitter:image" content="https://nontoxicliving.com/images/preview.jpg" />
+  <style>
+    :root {
+      --primary: #2F6F62;
+      --secondary: #9FC8B2;
+      --accent: #F4F1EC;
+      --text-dark: #1F2933;
+      --text-muted: #6B7280;
+      --border-light: #E5E7EB;
+    }
 
-  <link rel="stylesheet" href="style.css" />
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid var(--border-light);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* Page Header */
+    .page-header {
+      background: var(--accent);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Blog Grid */
+    .blog-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .post-card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .post-image {
+      height: 180px;
+      background: #e5e7eb;
+    }
+
+    .post-content {
+      padding: 1.5rem;
+    }
+
+    .post-content h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .post-content p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .post-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-light);
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Non-Toxic Living</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Recent Posts</h2>
-    <ul class="blog-list">
-      <li>
-        <h3><a href="#">5 Easy DIY Natural Cleaners and fragrances</a></h3>
-        <p>Learn to make safe, affordable cleaners with just 3 ingredients...</p>
-      </li>
-      <li>
-        <h3><a href="#">Non-Toxic Skincare: What to avoid and keep </a></h3>
-        <p>Understand harmful ingredients and how to choose better products...</p>
-      </li>
-      <li>
-        <h3><a href="#">Non-Toxic Personal Products: What to avoid and keep </a></h3>
-        <p>Understand harmful ingredients and how to choose better products...</p>
-      </li>
-    </ul>
-  </main>
+<header>
+  <h2>NonToxicLife</h2>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+  </nav>
+</header>
 
-  <footer>
-    <p>&copy; 2025 Non-Toxic Living</p>
-  </footer>
+<section class="page-header">
+  <h1>Blog</h1>
+  <p>Articles and guides on non-toxic living, clean beauty, healthy food, and safer homes.</p>
+</section>
+
+<main class="blog-container">
+  <div class="blog-grid">
+
+    <!-- Post 1 -->
+    <article class="post-card">
+      <div class="post-image"></div>
+      <div class="post-content">
+        <div class="post-meta">Clean Beauty · Jan 2025</div>
+        <h3>Are Anti-Aging Serums Safe for Dry Eyes?</h3>
+        <p>Understanding how skincare ingredients like retinol can affect eye health.</p>
+        <a href="#">Read more →</a>
+      </div>
+    </article>
+
+    <!-- Post 2 -->
+    <article class="post-card">
+      <div class="post-image"></div>
+      <div class="post-content">
+        <div class="post-meta">Non-Toxic Home · Jan 2025</div>
+        <h3>Hidden Toxins in Everyday Cleaning Products</h3>
+        <p>Common chemicals to watch out for and safer alternatives.</p>
+        <a href="#">Read more →</a>
+      </div>
+    </article>
+
+    <!-- Post 3 -->
+    <article class="post-card">
+      <div class="post-image"></div>
+      <div class="post-content">
+        <div class="post-meta">Healthy Food · Dec 2024</div>
+        <h3>Food Additives You Should Know About</h3>
+        <p>A simple guide to understanding labels and avoiding harmful additives.</p>
+        <a href="#">Read more →</a>
+      </div>
+    </article>
+
+    <!-- Post 4 -->
+    <article class="post-card">
+      <div class="post-image"></div>
+      <div class="post-content">
+        <div class="post-meta">Wellness · Dec 2024</div>
+        <h3>How Indoor Air Quality Affects Your Health</h3>
+        <p>Small changes that can significantly improve the air inside your home.</p>
+        <a href="#">Read more →</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  © 2025 NonToxicLife.org · Simple, research-based living
+</footer>
+
 </body>
 </html>
