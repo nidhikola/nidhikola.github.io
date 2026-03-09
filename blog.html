@@ -1,220 +1,220 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | NonToxicLife</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | NonToxicLife</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Read articles about non-toxic living, clean beauty, healthy food, and safer home choices." />
+    <!-- SEO -->
+    <meta name="description" content="Read articles about non-toxic living, clean beauty, healthy food, and safer home choices." />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --primary: #2F6F62;
-      --secondary: #9FC8B2;
-      --accent: #F4F1EC;
-      --text-dark: #1F2933;
-      --text-muted: #6B7280;
-      --border-light: #E5E7EB;
-    }
+    <style>
+        :root {
+          --primary: #2F6F62;
+          --secondary: #9FC8B2;
+          --accent: #F4F1EC;
+          --text-dark: #1F2933;
+          --text-muted: #6B7280;
+          --border-light: #E5E7EB;
+        }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text-dark);
-      background: #ffffff;
-      line-height: 1.7;
-    }
+        body {
+          font-family: 'Inter', sans-serif;
+          color: var(--text-dark);
+          background: #ffffff;
+          line-height: 1.7;
+        }
 
-    a {
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 500;
-    }
+        a {
+          text-decoration: none;
+          color: var(--primary);
+          font-weight: 500;
+        }
 
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      border-bottom: 1px solid var(--border-light);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-    }
+        /* Header */
+        header {
+          position: sticky;
+          top: 0;
+          background: #fff;
+          border-bottom: 1px solid var(--border-light);
+          padding: 1rem 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 100;
+        }
 
-    header h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
+        header h2 {
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
 
-    nav a {
-      margin-left: 1.5rem;
-      color: var(--text-muted);
-    }
+        nav a {
+          margin-left: 1.5rem;
+          color: var(--text-muted);
+        }
 
-    nav a:hover {
-      color: var(--primary);
-    }
+        nav a:hover {
+          color: var(--primary);
+        }
 
-    /* Page Header */
-    .page-header {
-      background: var(--accent);
-      padding: 4rem 1.5rem;
-      text-align: center;
-    }
+        /* Page Header */
+        .page-header {
+           background: linear-gradient(
+              rgba(255, 255, 255, 0),
+              rgba(255, 255, 255, 0)
+            ),
+            url("images/hero1.jpg") center / cover no-repeat;
+          padding: 4rem 1.5rem;
+          text-align: center;
+        }
 
-    .page-header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
+        .page-header h1 {
+          font-size: 2.8rem;
+          margin-bottom: 0.5rem;
+        }
 
-    .page-header p {
-      color: var(--text-muted);
-      max-width: 600px;
-      margin: auto;
-    }
+        .page-header p {
+          max-width: 600px;
+          margin: auto;
+        }
 
-    /* Blog Grid */
-    .blog-container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 4rem 1.5rem;
-    }
+        /* Blog Grid */
+        .blog-container {
+          max-width: 1100px;
+          margin: auto;
+          padding: 4rem 1.5rem;
+        }
 
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
+        .blog-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+        }
 
-    .post-card {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
+        .post-card {
+          background: white;
+          border-radius: 14px;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+          overflow: hidden;
+          transition: transform 0.3s ease;
+        }
 
-    .post-card:hover {
-      transform: translateY(-6px);
-    }
+        .post-card:hover {
+          transform: translateY(-6px);
+        }
 
-    .post-image {
-      height: 180px;
-      background: #e5e7eb;
-    }
+        .post-image {
+          height: 180px;
+          background: #e5e7eb;
+        }
 
-    .post-content {
-      padding: 1.5rem;
-    }
+        .post-content {
+          padding: 1.5rem;
+        }
 
-    .post-content h3 {
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-    }
+        .post-content h3 {
+          margin-bottom: 0.5rem;
+          font-size: 1.2rem;
+        }
 
-    .post-content p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
+        .post-content p {
+          color: var(--text-muted);
+          font-size: 0.95rem;
+          margin-bottom: 1rem;
+        }
 
-    .post-meta {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 0.8rem;
-    }
+        .post-meta {
+          font-size: 0.8rem;
+          color: var(--text-muted);
+          margin-bottom: 0.8rem;
+        }
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      border-top: 1px solid var(--border-light);
-    }
-  </style>
+        /* Footer */
+        footer {
+          text-align: center;
+          padding: 2rem;
+          color: var(--text-muted);
+          font-size: 0.9rem;
+          border-top: 1px solid var(--border-light);
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-  <h2>NonToxicLife</h2>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/about.html">About</a>
-  </nav>
+    <h2>NonToxicLife</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+    </nav>
 </header>
 
 <section class="page-header">
-  <h1>Blog</h1>
-  <p>Articles and guides on non-toxic living, clean beauty, healthy food, and safer homes.</p>
+    <h1>Blog</h1>
+    <p>Articles and guides on non-toxic living, clean beauty, healthy food, and safer homes.</p>
 </section>
 
 <main class="blog-container">
-  <div class="blog-grid">
+    <div class="blog-grid">
 
-    <!-- Post 1 -->
-    <article class="post-card">
-      <div class="post-image"></div>
-      <div class="post-content">
-        <div class="post-meta">Clean Beauty · Jan 2025</div>
-        <h3>Are Anti-Aging Serums Safe for Dry Eyes?</h3>
-        <p>Understanding how skincare ingredients like retinol can affect eye health.</p>
-        <a href="#">Read more →</a>
-      </div>
-    </article>
+        <!-- Post 1 -->
+        <article class="post-card">
+            <div class="post-content">
+                <div class="post-meta">Clean Fashion · Jan 2025</div>
+                <h3>Clothing choices</h3>
+                <p>Clothes: What You Wear Every Day Might Be Affecting You More Than You Think.</p>
+                <a href="fashion/clothes.html">Read more →</a>
+            </div>
+        </article>
 
-    <!-- Post 2 -->
-    <article class="post-card">
-      <div class="post-image"></div>
-      <div class="post-content">
-        <div class="post-meta">Non-Toxic Home · Jan 2025</div>
-        <h3>Hidden Toxins in Everyday Cleaning Products</h3>
-        <p>Common chemicals to watch out for and safer alternatives.</p>
-        <a href="#">Read more →</a>
-      </div>
-    </article>
+        <!-- Post 2 -->
+        <article class="post-card">
+            <div class="post-content">
+                <div class="post-meta">Clean Fashion · Jan 2025</div>
+                <h3>Shoes</h3>
+                <p>Shoes (Including Crocs): More Than Just Comfort and Style</p>
+                <a href="fashion/shoes.html">Read more →</a>
+            </div>
+        </article>
 
-    <!-- Post 3 -->
-    <article class="post-card">
-      <div class="post-image"></div>
-      <div class="post-content">
-        <div class="post-meta">Healthy Food · Dec 2024</div>
-        <h3>Food Additives You Should Know About</h3>
-        <p>A simple guide to understanding labels and avoiding harmful additives.</p>
-        <a href="#">Read more →</a>
-      </div>
-    </article>
+        <!-- Post 3 -->
+        <article class="post-card">
+            <div class="post-content">
+                <div class="post-meta">Clean Fashion · Dec 2025</div>
+                <h3>Workout Attire</h3>
+                <p>Workout Attire: Why Sweat Changes Everything.</p>
+                <a href="fashion/workout.html">Read more →</a>
+            </div>
+        </article>
 
-    <!-- Post 4 -->
-    <article class="post-card">
-      <div class="post-image"></div>
-      <div class="post-content">
-        <div class="post-meta">Wellness · Dec 2024</div>
-        <h3>How Indoor Air Quality Affects Your Health</h3>
-        <p>Small changes that can significantly improve the air inside your home.</p>
-        <a href="#">Read more →</a>
-      </div>
-    </article>
+        <!-- Post 4 -->
+        <article class="post-card">
+            <div class="post-content">
+                <div class="post-meta">Clean Fashion · Jan 2025</div>
+                <h3>Watch Bands</h3>
+                <p>Watch Bands: A Small Item You Wear All the Time.</p>
+                <a href="fashion/watch.html">Read more →</a>
+            </div>
+        </article>
 
-  </div>
+    </div>
 </main>
 
 <footer>
-  © 2025 NonToxicLife.org · Simple, research-based living
+    © 2025 NonToxicLife.org · Simple, research-based living
 </footer>
 
 </body>
