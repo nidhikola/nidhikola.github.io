@@ -1,227 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NonToxicLife | Simple, Non-Toxic Living</title>
-
-    <!-- SEO -->
-    <meta name="description" content="NonToxicLife helps you live a healthier life with non-toxic home, beauty, and wellness tips backed by research." />
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-          --primary: #2F6F62;
-          --secondary: #9FC8B2;
-          --accent: #F4F1EC;
-          --text-dark: #1F2933;
-          --text-muted: #6B7280;
-          --border-light: #E5E7EB;
-        }
-
-        * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-
-        body {
-          font-family: 'Inter', sans-serif;
-          color: var(--text-dark);
-          background: #ffffff;
-          line-height: 1.7;
-        }
-
-        a {
-          text-decoration: none;
-          color: var(--primary);
-          font-weight: 500;
-        }
-
-        /* Header */
-        header {
-          position: sticky;
-          top: 0;
-          background: #fff;
-          border-bottom: 1px solid var(--border-light);
-          padding: 1rem 2rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          z-index: 100;
-        }
-
-        header h2 {
-          font-size: 1.2rem;
-          font-weight: 700;
-        }
-
-        nav a {
-          margin-left: 1.5rem;
-          color: var(--text-muted);
-        }
-
-        nav a:hover {
-          color: var(--primary);
-        }
-
-        /* Hero */
-        .hero {
-          background: linear-gradient(
-              rgba(255, 255, 255, 0),
-              rgba(255, 255, 255, 0)
-            ),
-            url("images/hero.jpg") center / cover no-repeat;
-          color: #fff;
-          padding: 6rem 1.5rem;
-          text-align: center;
-        }
-
-        .hero h1 {
-          font-size: 3rem;
-          max-width: 800px;
-          margin: 0 auto 1rem;
-        }
-
-        .hero p {
-          font-size: 1.1rem;
-          max-width: 600px;
-          margin: 0 auto 2rem;
-        }
-
-        .btn-primary {
-          display: inline-block;
-          background: #ffffff;
-          color: var(--primary);
-          padding: 0.75rem 1.5rem;
-          border-radius: 30px;
-          font-weight: 600;
-        }
-
-        /* Sections */
-        section {
-          padding: 4rem 1.5rem;
-          max-width: 1100px;
-          margin: auto;
-        }
-
-        .intro {
-          text-align: center;
-        }
-
-        .intro h2 {
-          font-size: 2.2rem;
-          margin-bottom: 1rem;
-        }
-
-        .intro p {
-          color: var(--text-muted);
-          max-width: 700px;
-          margin: auto;
-        }
-
-        /* Cards */
-        .cards {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-          gap: 2rem;
-          margin-top: 3rem;
-        }
-
-        .card {
-          background: #ffffff;
-          border-radius: 14px;
-          padding: 2rem;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-          transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-          transform: translateY(-6px);
-        }
-
-        .card h3 {
-          margin-bottom: 0.5rem;
-        }
-
-        .card p {
-          color: var(--text-muted);
-          margin-bottom: 1rem;
-        }
-
-        /* CTA */
-        .cta {
-          background: var(--accent);
-          text-align: center;
-          padding: 4rem 1.5rem;
-          margin-top: 4rem;
-        }
-
-        .cta h2 {
-          font-size: 2rem;
-          margin-bottom: 0.5rem;
-        }
-
-        .cta p {
-          color: var(--text-muted);
-          margin-bottom: 1.5rem;
-        }
-
-        .cta input {
-          padding: 0.7rem;
-          width: 250px;
-          max-width: 80%;
-          border-radius: 6px;
-          border: 1px solid var(--border-light);
-          margin-right: 0.5rem;
-        }
-
-        .cta button {
-          padding: 0.7rem 1.2rem;
-          border-radius: 6px;
-          border: none;
-          background: var(--primary);
-          color: white;
-          font-weight: 600;
-          cursor: pointer;
-        }
-
-        /* Footer */
-        footer {
-          text-align: center;
-          padding: 2rem;
-          color: var(--text-muted);
-          font-size: 0.9rem;
-          border-top: 1px solid var(--border-light);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | NonToxicLife</title>
+  <meta name="description" content="About NonToxicLife: research-based, practical guidance for reducing everyday toxins without fear or extremes." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
 <header>
-    <h2>NonToxicLife</h2>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-    </nav>
+  <a class="logo" href="index.html">NonToxicLife</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html" class="active">About</a>
+  </nav>
 </header>
 
-<section class="hero">
-    <h1>Simple, Non-Toxic Living</h1>
-    <p>Practical guidance for reducing toxins in your home, food, and personal care — without fear or extremes.</p>
-    <a href="blog.html" class="btn-primary">Explore Articles</a>
+<section class="page-hero">
+  <div class="hero-bg" style="background-image: url('images/hero.jpg');"></div>
+  <div class="hero-inner">
+    <h1>About NonToxicLife</h1>
+    <p>Why this site exists and what it is trying to do.</p>
+  </div>
 </section>
 
-<section class="intro">
-    <h2>About Me</h2>
-    <p>Hello! I'm passionate about reducing toxins in everyday life — from cleaning supplies to food to skincare to mental health. This blog is my journey and resource hub for living simply, cleanly, kindly and healthily.</p>
+<div class="section" style="max-width: 760px;">
+  <h2 class="section-title">Hello</h2>
+  <p style="margin-bottom: 1.2rem;">
+    I started NonToxicLife because I kept finding that the information on this topic was either too alarming or too dismissive. Most articles either told you everything is fine or that everything is trying to kill you. Neither was useful.
+  </p>
+  <p style="margin-bottom: 1.2rem;">
+    This site tries to sit in the middle: research-based, specific, and honest about what is known versus what is not. Every article links to its sources. Every recommendation is practical, not aspirational.
+  </p>
+  <p style="margin-bottom: 1.2rem;">
+    The goal is not a perfect, toxin-free life. That is not possible, and the anxiety of trying to achieve it is itself a health problem. The goal is to make intentional swaps over time, starting with the things that matter most.
+  </p>
+  <p style="margin-bottom: 2.5rem;">
+    The categories on this site cover fashion, beauty, home, food, and mental health because they are all connected. What you eat, wear, breathe, clean with, and how you manage stress all interact. NonToxicLife covers all of it.
+  </p>
+
+  <h2 class="section-title" style="margin-bottom: 1rem;">A few things worth stating clearly</h2>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 2;">
+    <li>Articles link to primary sources: studies, FDA documents, and government databases.</li>
+    <li>Product recommendations are based on ingredient standards, not paid partnerships.</li>
+    <li>Where the evidence is uncertain, that uncertainty is stated.</li>
+    <li>The site is written for real people with real budgets, not people with unlimited time and money.</li>
+  </ul>
+</div>
+
+<div class="cta-band">
+  <h2>Get Non-Toxic Living Tips</h2>
+  <p>Occasional emails with practical, science-based advice. No spam, ever.</p>
+  <div class="email-form">
+    <input type="email" placeholder="Your email address" />
+    <button type="button">Subscribe</button>
+  </div>
+</div>
 
 <footer>
-    © 2025 NonToxicLife.org · Living healthier, one choice at a time
+  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Living healthier, one choice at a time
 </footer>
 
 </body>
