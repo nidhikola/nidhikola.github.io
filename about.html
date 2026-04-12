@@ -6,6 +6,7 @@
   <title>About | NonToxicLife</title>
   <meta name="description" content="About NonToxicLife: research-based, practical guidance for reducing everyday toxins without fear or extremes." />
   <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 <body>
 
@@ -53,15 +54,41 @@
 <div class="cta-band">
   <h2>Get Non-Toxic Living Tips</h2>
   <p>Occasional emails with practical, science-based advice. No spam, ever.</p>
-  <div class="email-form">
-    <input type="email" placeholder="Your email address" />
-    <button type="button">Subscribe</button>
+    <div class="email-form">
+    <input type="email" id="sub-email-1" placeholder="Your email address" />
+    <button type="button" onclick="handleSubscribe('sub-email-1','sub-msg-1')">Subscribe</button>
   </div>
+  <div class="subscribe-msg" id="sub-msg-1"></div>
 </div>
 
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Living healthier, one choice at a time
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Living healthier, one choice at a time
 </footer>
+
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+
+  function handleSubscribe(inputId, msgId) {
+    const input = document.getElementById(inputId);
+    const msg   = document.getElementById(msgId);
+    const val   = input.value.trim();
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    msg.style.display = 'block';
+    msg.classList.remove('error');
+    if (!val) {
+      msg.classList.add('error');
+      msg.textContent = 'Please enter your email address.';
+      input.focus(); return;
+    }
+    if (!valid) {
+      msg.classList.add('error');
+      msg.textContent = 'Please enter a valid email address.';
+      input.focus(); return;
+    }
+    input.value = '';
+    msg.textContent = 'You are subscribed. Thank you!';
+  }
+</script>
 
 </body>
 </html>

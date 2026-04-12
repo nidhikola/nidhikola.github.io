@@ -6,6 +6,7 @@
   <title>NonToxicLife | Simple, Non-Toxic Living</title>
   <meta name="description" content="NonToxicLife helps you live healthier with research-based guidance on non-toxic home, beauty, food, fashion, and mental wellness." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 <body>
 
@@ -22,46 +23,47 @@
   <div class="hero-bg" style="background-image: url('images/hero.jpg');"></div>
   <div class="hero-inner">
     <h1>Simple, Non-Toxic Living</h1>
-    <p>Practical, research-based guidance for reducing everyday toxins — without fear or extremes.</p>
+    <p>Practical, research-based guidance for reducing everyday toxins without fear or extremes.</p>
     <a href="blog.html" class="btn btn-white">Explore Articles</a>
   </div>
 </section>
 
 <div class="section">
   <h2 class="section-title">Why It Matters</h2>
-  <p class="section-sub">Everyday products can contain chemicals that affect long-term health. NonToxicLife helps you make safer, informed choices — one swap at a time.</p>
+  <p class="section-sub">Everyday products can contain chemicals that affect long-term health. NonToxicLife helps you make safer, informed choices, one swap at a time.</p>
 
   <div class="cat-grid">
+
     <a class="cat-card" href="fashion/index.html">
-      <div class="cat-icon">👗</div>
-      <h3>Clean Fashion</h3>
-      <p>Non-toxic clothing, shoes, accessories and more.</p>
+      <div class="cat-card-bg" style="background-image: url('images/fashion.png');"></div>
+      <div class="cat-card-inner"><h3>Clean Fashion</h3><p>Non-toxic clothing, shoes, accessories and more.</p></div>
     </a>
+
     <a class="cat-card" href="beauty/index.html">
-      <div class="cat-icon">🧴</div>
-      <h3>Clean Beauty</h3>
-      <p>Body wash, shampoo, deodorant, skincare, makeup, and more.</p>
+      <div class="cat-card-bg" style="background-image: url('images/hero1.jpg');"></div>
+      <div class="cat-card-inner"><h3>Clean Beauty</h3><p>Body wash, shampoo, deodorant, skincare, makeup, and more.</p></div>
     </a>
+
     <a class="cat-card" href="home/index.html">
-      <div class="cat-icon">🏠</div>
-      <h3>Non-Toxic Home</h3>
-      <p>Cleaning products, air quality, water filters, kitchen, candles, bedding.</p>
+      <div class="cat-card-bg" style="background-image: url('images/hero.jpg');"></div>
+      <div class="cat-card-inner"><h3>Non-Toxic Home</h3><p>Cleaning products, air quality, water filters, kitchen, candles, bedding.</p></div>
     </a>
+
     <a class="cat-card" href="food/index.html">
-      <div class="cat-icon">🥦</div>
-      <h3>Healthy Food</h3>
-      <p>Plastic containers, coffee cups, ramen, gum, protein powders, produce, and food dyes.</p>
+      <div class="cat-card-bg" style="background-image: url('images/hero.jpg');"></div>
+      <div class="cat-card-inner"><h3>Healthy Food</h3><p>Plastic containers, coffee cups, ramen, gum, protein powders, produce, and food dyes.</p></div>
     </a>
+
     <a class="cat-card" href="mental/index.html">
-      <div class="cat-icon">🧠</div>
-      <h3>Mental Health</h3>
-      <p>Social media, school pressure, meditation, hobbies, and modern life.</p>
+      <div class="cat-card-bg" style="background-image: url('images/hero1.jpg');"></div>
+      <div class="cat-card-inner"><h3>Mental Health</h3><p>Social media, school pressure, meditation, and hobbies.</p></div>
     </a>
-    <a class="cat-card" href="mental/index.html#addictions">
-      <div class="cat-icon">🚭</div>
-      <h3>Addictions</h3>
-      <p>Honest, non-judgmental guidance on smoking, vaping, alcohol, and more.</p>
+
+    <a class="cat-card" href="mental/addictions.html">
+      <div class="cat-card-bg" style="background-image: url('images/hero.jpg');"></div>
+      <div class="cat-card-inner"><h3>Addictions</h3><p>Honest, non-judgmental guidance on smoking, vaping, and alcohol.</p></div>
     </a>
+
   </div>
 </div>
 
@@ -69,14 +71,40 @@
   <h2>Get Non-Toxic Living Tips</h2>
   <p>Occasional emails with practical, science-based advice. No spam, ever.</p>
   <div class="email-form">
-    <input type="email" placeholder="Your email address" />
-    <button type="button">Subscribe</button>
+    <input type="email" id="sub-email" placeholder="Your email address" />
+    <button type="button" onclick="handleSubscribe('sub-email','sub-msg')">Subscribe</button>
   </div>
+  <div class="subscribe-msg" id="sub-msg"></div>
 </div>
 
 <footer>
-  &copy; 2026 NonToxicLife.org &nbsp;&middot;&nbsp; Living healthier, one choice at a time
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Living healthier, one choice at a time
 </footer>
+
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+
+  function handleSubscribe(inputId, msgId) {
+    const input = document.getElementById(inputId);
+    const msg   = document.getElementById(msgId);
+    const val   = input.value.trim();
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    msg.style.display = 'block';
+    msg.classList.remove('error');
+    if (!val) {
+      msg.classList.add('error');
+      msg.textContent = 'Please enter your email address.';
+      input.focus(); return;
+    }
+    if (!valid) {
+      msg.classList.add('error');
+      msg.textContent = 'Please enter a valid email address.';
+      input.focus(); return;
+    }
+    input.value = '';
+    msg.textContent = 'You are subscribed. Thank you!';
+  }
+</script>
 
 </body>
 </html>
