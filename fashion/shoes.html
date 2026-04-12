@@ -6,6 +6,7 @@
   <title>Non-Toxic Shoes Guide | NonToxicLife</title>
   <meta name="description" content="What most shoes are made of and why it matters when your feet are warm and sweaty all day." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 
@@ -93,8 +94,12 @@
 </article>
 
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
 </footer>
+
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
 
 </body>
 </html>

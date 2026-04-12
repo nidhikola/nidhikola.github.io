@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clean Fashion | NonToxicLife</title>
-  <meta name="description" content="Non-toxic clothing, shoes, workout attire, and accessories. Research-based guidance on what you wear." />
+  <meta name="description" content="What you wear touches your skin for up to 12 hours a day. It matters more than most people realize." />
   <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
-
 <header>
   <a class="logo" href="../index.html">NonToxicLife</a>
   <nav>
@@ -17,7 +17,6 @@
     <a href="../about.html">About</a>
   </nav>
 </header>
-
 <section class="page-hero">
   <div class="hero-bg" style="background-image: url('../images/fashion.png');"></div>
   <div class="hero-inner">
@@ -25,48 +24,47 @@
     <p>What you wear touches your skin for up to 12 hours a day. It matters more than most people realize.</p>
   </div>
 </section>
-
 <div class="section">
   <div class="card-grid">
     <div class="card">
-      <div class="card-img" style="background-image: url('../images/clothes.jfif');"></div>
+      <div class="card-img" style="background-image: url('../images/fashion.png');"></div>
       <div class="card-body">
-        <span class="card-tag">Clothing</span>
-        <h3>What You Wear Every Day Might Be Affecting You</h3>
-        <p>Formaldehyde finishes, synthetic dyes, PFAS coatings — and where to start swapping.</p>
+        <h3>Clothing: What You Wear Every Day</h3>
+        <p>Formaldehyde finishes, synthetic dyes, PFAS coatings.</p>
         <a class="read-more" href="clothes.html">Read more &rarr;</a>
       </div>
     </div>
     <div class="card">
+      <div class="card-img" style="background-image: url('../images/clothes.jfif');"></div>
       <div class="card-body">
-        <span class="card-tag">Shoes</span>
-        <h3>More Than Just Comfort and Style</h3>
-        <p>Feet are warm, sweaty, and enclosed for hours. Chemicals in shoe materials have a path in.</p>
+        <h3>Shoes: More Than Comfort and Style</h3>
+        <p>Feet are warm and sweaty inside shoes all day.</p>
         <a class="read-more" href="shoes.html">Read more &rarr;</a>
       </div>
     </div>
     <div class="card">
+      <div class="card-img" style="background-image: url('../images/fashion.png');"></div>
       <div class="card-body">
-        <span class="card-tag">Workout Attire</span>
-        <h3>Why Sweat Changes Everything</h3>
-        <p>Sweating opens pores and increases skin absorption. Athletic wear gets its own article for a reason.</p>
+        <h3>Workout Attire</h3>
+        <p>Sweat opens pores. Athletic wear deserves extra attention.</p>
         <a class="read-more" href="workout.html">Read more &rarr;</a>
       </div>
     </div>
     <div class="card">
+      <div class="card-img" style="background-image: url('../images/clothes.jfif');"></div>
       <div class="card-body">
-        <span class="card-tag">Watch Bands</span>
-        <h3>One of the Simplest Swaps You Can Make</h3>
-        <p>Almost 24-hour skin contact, PFAS found in popular bands, and a 5-minute fix.</p>
+        <h3>Watch Bands</h3>
+        <p>Almost 24-hour skin contact, PFAS found in popular bands.</p>
         <a class="read-more" href="watchbands.html">Read more &rarr;</a>
       </div>
     </div>
   </div>
 </div>
-
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
 </footer>
-
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
 </body>
 </html>
