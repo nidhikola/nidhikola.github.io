@@ -6,6 +6,7 @@
   <title>Smoking and Quitting | NonToxicLife</title>
   <meta name="description" content="7,000 chemicals per cigarette, nicotine's neurochemistry, and the health recovery timeline." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -47,6 +48,10 @@
 </div>
 
 </article>
-<footer>&copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<footer>&copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>

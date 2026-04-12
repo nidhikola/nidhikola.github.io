@@ -6,6 +6,7 @@
   <title>Meditation Guide | NonToxicLife</title>
   <meta name="description" content="Strong neuroscience evidence, how little time it actually takes, and how to actually start." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -42,6 +43,10 @@
 </div>
 
 </article>
-<footer>&copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<footer>&copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>
