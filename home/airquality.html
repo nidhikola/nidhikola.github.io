@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indoor Air Quality Guide | NonToxicLife</title>
-  <meta name="description" content="Gas stoves, VOCs from furniture, combustion sources, and mold — and how ventilation fixes most of it." />
+  <meta name="description" content="Gas stoves, VOCs from furniture, combustion sources, and mold, and how ventilation fixes most of it." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -57,7 +58,11 @@
 
 </article>
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
 </footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>

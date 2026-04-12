@@ -6,6 +6,7 @@
   <title>Non-Toxic Bedding, Mattresses, and Furniture | NonToxicLife</title>
   <meta name="description" content="Flame retardants, PFAS coatings, polyurethane off-gassing, and organic alternatives for where you sleep a third of your life." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -64,6 +65,10 @@
 </div>
 
 </article>
-<footer>&copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<footer>&copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>

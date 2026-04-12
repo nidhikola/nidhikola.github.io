@@ -6,6 +6,7 @@
   <title>Water Filter Guide | NonToxicLife</title>
   <meta name="description" content="PFAS in 45% of US tap water, lead pipes, disinfection byproducts, and which filter type actually removes what." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -53,7 +54,11 @@
 
 </article>
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
 </footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>

@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Non-Toxic Home | NonToxicLife</title>
+  <meta name="description" content="Indoor air is often more polluted than outdoor air. Small changes in your home add up fast." />
   <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -17,9 +19,68 @@
 </header>
 <section class="page-hero">
   <div class="hero-bg" style="background-image: url('../images/hero.jpg');"></div>
-  <div class="hero-inner"><h1>Non-Toxic Home</h1><p>Research-based guidance on non-toxic home.</p></div>
+  <div class="hero-inner">
+    <h1>Non-Toxic Home</h1>
+    <p>Indoor air is often more polluted than outdoor air. Small changes in your home add up fast.</p>
+  </div>
 </section>
-<div class="section"><div class="card-grid"><div class="card"><div class="card-body"><span class="card-tag">Cleaning</span><h3>Cleaning Products: The Stuff That Might Also Do Some Harm</h3><p>Quats, bleach hazards, synthetic fragrance.</p><a class="read-more" href="cleaning.html">Read more &rarr;</a></div></div><div class="card"><div class="card-body"><span class="card-tag">Air</span><h3>Air Quality: You Spend 90% of Your Time Indoors</h3><p>Gas stoves, VOCs from furniture, HEPA filters.</p><a class="read-more" href="airquality.html">Read more &rarr;</a></div></div><div class="card"><div class="card-body"><span class="card-tag">Water</span><h3>Water Filters: What Is Coming Out of Your Tap</h3><p>PFAS in 45% of US tap water, lead pipes.</p><a class="read-more" href="water.html">Read more &rarr;</a></div></div><div class="card"><div class="card-body"><span class="card-tag">Kitchen</span><h3>The Plastic-Free Kitchen</h3><p>Microwaving in plastic and BPA replacements.</p><a class="read-more" href="kitchen.html">Read more &rarr;</a></div></div><div class="card"><div class="card-body"><span class="card-tag">Candles</span><h3>Candles and Fragrances</h3><p>Paraffin off-gassing and better alternatives.</p><a class="read-more" href="candles.html">Read more &rarr;</a></div></div><div class="card"><div class="card-body"><span class="card-tag">Bedding</span><h3>Bedding, Mattresses, and Furniture</h3><p>Flame retardants and PFAS coatings.</p><a class="read-more" href="bedding.html">Read more &rarr;</a></div></div></div></div>
-<footer>&copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<div class="section">
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-img" style="background-image: url('../images/hero.jpg');"></div>
+      <div class="card-body">
+        <h3>Cleaning Products</h3>
+        <p>Quats, bleach hazards, synthetic fragrance.</p>
+        <a class="read-more" href="cleaning.html">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('../images/hero1.jpg');"></div>
+      <div class="card-body">
+        <h3>Air Quality</h3>
+        <p>Gas stoves, VOCs from furniture, HEPA filters.</p>
+        <a class="read-more" href="airquality.html">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('../images/hero.jpg');"></div>
+      <div class="card-body">
+        <h3>Water Filters</h3>
+        <p>PFAS in 45% of US tap water, lead pipes.</p>
+        <a class="read-more" href="water.html">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('../images/hero1.jpg');"></div>
+      <div class="card-body">
+        <h3>The Plastic-Free Kitchen</h3>
+        <p>Microwaving in plastic and BPA replacements.</p>
+        <a class="read-more" href="kitchen.html">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('../images/hero.jpg');"></div>
+      <div class="card-body">
+        <h3>Candles and Fragrances</h3>
+        <p>Paraffin off-gassing and better alternatives.</p>
+        <a class="read-more" href="candles.html">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('../images/hero1.jpg');"></div>
+      <div class="card-body">
+        <h3>Bedding, Mattresses, and Furniture</h3>
+        <p>Flame retardants and PFAS coatings.</p>
+        <a class="read-more" href="bedding.html">Read more &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+</footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
 </body>
 </html>
