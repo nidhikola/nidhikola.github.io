@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Makeup and Lip Care | NonToxicLife</title>
-  <meta name="description" content="Lead in lipstick, PFAS in foundations, coal tar dyes — and what the cleaner makeup market looks like now." />
+  <meta name="description" content="Lead in lipstick, PFAS in foundations, coal tar dyes, and what the cleaner makeup market looks like now." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -56,7 +57,11 @@
 
 </article>
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
 </footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>

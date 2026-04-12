@@ -6,6 +6,7 @@
   <title>Body Wash and Soaps | NonToxicLife</title>
   <meta name="description" content="What is actually in conventional body wash: sulfates, parabens, synthetic fragrance, and what to use instead." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -65,7 +66,11 @@
 
 </article>
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
 </footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>

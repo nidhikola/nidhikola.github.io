@@ -6,6 +6,7 @@
   <title>Shampoo and Hair Care | NonToxicLife</title>
   <meta name="description" content="Your scalp is more permeable than most skin. What that means for what you lather into it multiple times a week." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -64,7 +65,11 @@
 
 </article>
 <footer>
-  &copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
+  &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living
 </footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>
