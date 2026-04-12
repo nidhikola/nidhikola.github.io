@@ -6,6 +6,7 @@
   <title>Coffee Cups and Disposable Drinks | NonToxicLife</title>
   <meta name="description" content="That paper cup is lined with polyethylene. 25,000 microplastic particles per cup of hot liquid." />
   <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
 <header>
@@ -40,6 +41,10 @@
 </div>
 
 </article>
-<footer>&copy; 2025 NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<footer>&copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Simple, research-based living</footer>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+
 </body>
 </html>
