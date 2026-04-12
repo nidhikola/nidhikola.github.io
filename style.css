@@ -157,21 +157,25 @@ nav a.active {
 
 .page-hero .hero-inner {
   position: relative;
-  padding: 3rem 1.5rem;
+  padding: 3.5rem 1.5rem 4.5rem;
   color: var(--white);
-  max-width: 640px;
+  max-width: 760px;
+  z-index: 1;
 }
 
 .page-hero h1 {
   font-family: 'Lora', Georgia, serif;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
-  line-height: 1.2;
-  margin-bottom: 0.6rem;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+  text-wrap: balance;
 }
 
 .page-hero p {
   font-size: 1rem;
-  opacity: 0.88;
+  opacity: 0.92;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* ---- Section container ---- */
@@ -212,6 +216,15 @@ nav a.active {
   transform: translateY(-4px);
   box-shadow: var(--card-shadow-hover);
 }
+.card.is-clickable {
+  cursor: pointer;
+}
+
+.card.is-clickable:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
 
 .card-img {
   height: 170px;
@@ -365,8 +378,10 @@ footer {
 
 /* ---- Article layout ---- */
 .article-wrap {
+  position: relative;
+  z-index: 1;
   max-width: 780px;
-  margin: -4rem auto 4rem;
+  margin: -1.5rem auto 4rem;
   background: var(--white);
   border-radius: var(--radius);
   padding: 2.75rem 2.25rem;
@@ -482,11 +497,14 @@ footer {
 
 /* Breadcrumb */
 .breadcrumb {
+  position: relative;
+  z-index: 2;
   max-width: 780px;
-  margin: 1.5rem auto 0;
+  margin: 1.25rem auto 0.85rem;
   padding: 0 2.25rem;
   font-size: 0.82rem;
   color: var(--text-muted);
+  line-height: 1.5;
 }
 
 .breadcrumb a { color: var(--primary); }
@@ -554,7 +572,12 @@ footer {
 @media (max-width: 680px) {
   header { padding: 0 1rem; }
   nav a { padding: 0.35rem 0.6rem; font-size: 0.82rem; }
-  .article-wrap { margin-top: -2rem; padding: 1.75rem 1.25rem; }
+  .page-hero { min-height: 34vh; }
+  .page-hero .hero-inner { padding: 3rem 1rem 3.5rem; }
+  .page-hero h1 { font-size: clamp(1.6rem, 8vw, 2.2rem); }
+  .breadcrumb { padding: 0 1.25rem; margin-top: 1rem; }
+  .article-wrap { margin-top: -1rem; padding: 1.75rem 1.25rem; }
+  .post-meta { line-height: 1.6; }
   .card-grid, .cat-grid { grid-template-columns: 1fr; }
 }
 
