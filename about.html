@@ -67,6 +67,29 @@
   &copy; <span class="year"></span> NonToxicLife.org &nbsp;&middot;&nbsp; Living healthier, one choice at a time
 </footer>
 
-  <script src="script.js"></script>
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+
+  function handleSubscribe(inputId, msgId) {
+    const input = document.getElementById(inputId);
+    const msg   = document.getElementById(msgId);
+    const val   = input.value.trim();
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    msg.style.display = 'block';
+    msg.classList.remove('error');
+    if (!val) {
+      msg.classList.add('error');
+      msg.textContent = 'Please enter your email address.';
+      input.focus(); return;
+    }
+    if (!valid) {
+      msg.classList.add('error');
+      msg.textContent = 'Please enter a valid email address.';
+      input.focus(); return;
+    }
+    input.value = '';
+    msg.textContent = 'You are subscribed. Thank you!';
+  }
+</script>
 </body>
 </html>
